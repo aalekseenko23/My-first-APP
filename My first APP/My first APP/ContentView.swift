@@ -17,19 +17,23 @@ struct ContentView: View {
                     Image("Serious man in cold water")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .clipShape(RoundedRectangle(cornerRadius: 45.0))
+                        .clipShape(RoundedRectangle(cornerRadius: 11.0))
                     
                     
                     HStack {
                         VStack(alignment:.leading){
-                            Text("Exploration").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                            Text("Exploration").fontWeight(.light)
+                            Text("Exploration")
+                                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                                .foregroundStyle(Color.accentColor)
+                            Text("Exploration")
+                                .font(.footnote)
+                                .foregroundStyle(Color.accentColor)
                         }
                         
                         Spacer()
                         
                         HStack (alignment:.bottom) {
-                            Text("Start").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/).foregroundStyle(.cyan)
+                            Text("Start").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/).foregroundStyle(Color.videoCard)
                         }
                         
                         
@@ -37,9 +41,9 @@ struct ContentView: View {
                 }.padding(20)
                     .background(
                         
-                        RoundedRectangle(cornerRadius: 45.0)
+                        RoundedRectangle(cornerRadius: 11.0)
                             .foregroundColor(.white)
-                            .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                            .shadow(radius: 5)
                     )
             }.padding()
             
@@ -49,19 +53,25 @@ struct ContentView: View {
                     Image("Smiling man in cold water")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .clipShape(RoundedRectangle(cornerRadius: 45.0))
+                        .clipShape(RoundedRectangle(cornerRadius: 11.0))
                     
                     
                     HStack {
                         VStack(alignment:.leading){
-                            Text("Exploration").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                            Text("Exploration").fontWeight(.light)
+                            Text("MiniClass")
+                                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                                .foregroundStyle(Color.accentColor)
+                            Text("An introduction to the Wim Hof Method")
+                                .font(.footnote)
+                                .foregroundStyle(Color.accentColor)
                         }
                         
                         Spacer()
                         
                         HStack (alignment:.bottom) {
-                            Text("Start").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/).foregroundStyle(.cyan)
+                            Text("Start")
+                                .fontWeight(.bold)
+                                .foregroundStyle(Color.videoCard)
                         }
                         
                         
@@ -69,9 +79,9 @@ struct ContentView: View {
                 }.padding(20)
                     .background(
                         
-                        RoundedRectangle(cornerRadius: 45.0)
+                        RoundedRectangle(cornerRadius: 11.0)
                             .foregroundColor(.white)
-                            .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                            .shadow(radius: 5)
                     )
             }.padding()
                 .navigationTitle("E-Learning")
