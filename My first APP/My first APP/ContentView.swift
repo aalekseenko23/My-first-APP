@@ -87,7 +87,13 @@ struct ContentView: View {
                 .navigationTitle("E-Learning")
                 .navigationBarTitleDisplayMode(.inline)
             
+            Button("Open WHM Explanations PDF") {
+                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*///Open PDF
+            }
+            .buttonStyle(.borderedProminent)
+            
         }
+        
         
     }
 }
