@@ -7,6 +7,11 @@
 
 import SwiftUI
 
+//init() {
+//            let navBarAppearance = UINavigationBar.appearance()
+//            navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+//            navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+//          }  
 
 struct ContentView: View {
     var body: some View {
@@ -24,7 +29,7 @@ struct ContentView: View {
                     HStack {
                         VStack(alignment:.leading){
                             Text("Exploration")
-                                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                                .fontWeight(.bold)
                                 .foregroundStyle(Color.accentColor)
                             Text("Exploration")
                                 .font(.footnote)
@@ -34,17 +39,17 @@ struct ContentView: View {
                         Spacer()
                         
                         HStack (alignment:.bottom) {
-                            Text("Start").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/).foregroundStyle(Color.videoCard)
+                            Text("Start").fontWeight(.bold).foregroundStyle(Color.videoCard)
                         }
                         
                         
                     }
-                }.padding(20)
-                    .background(
-                        
-                        RoundedRectangle(cornerRadius: 11.0)
-                            .foregroundColor(.white)
-                            .shadow(radius: 5)
+                }
+                .padding(20)
+                .background(
+                    RoundedRectangle(cornerRadius: 11.0)
+                .foregroundColor(.white)
+                .shadow(radius: 5)
                     )
             }.padding()
             
@@ -60,7 +65,7 @@ struct ContentView: View {
                     HStack {
                         VStack(alignment:.leading){
                             Text("MiniClass")
-                                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                                .fontWeight(.bold)
                                 .foregroundStyle(Color.accentColor)
                             Text("An introduction to the Wim Hof Method")
                                 .font(.footnote)
@@ -89,7 +94,7 @@ struct ContentView: View {
                 .navigationBarTitleDisplayMode(.inline)
             
             Button("Open WHM Explanations PDF") {
-                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*///Open PDF
+                //Open PDF
             }
             .buttonStyle(.borderedProminent)
             
