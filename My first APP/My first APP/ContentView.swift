@@ -7,13 +7,15 @@
 
 import SwiftUI
 
-//init() {
-//            let navBarAppearance = UINavigationBar.appearance()
-//            navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
-//            navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
-//          }  
+
 
 struct ContentView: View {
+    init() {
+    let navBarAppearance = UINavigationBar.appearance()
+    navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.accent]
+    navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.accent]
+              }
+    
     var body: some View {
         
         NavigationStack {
