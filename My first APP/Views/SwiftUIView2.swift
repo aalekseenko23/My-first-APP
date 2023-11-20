@@ -10,7 +10,8 @@ import SwiftUI
 
 struct SwiftUIView2: View {
     
-    let screenWidth = UIScreen.main.bounds.width
+    // pretty intersting function
+    //    let screenWidth = UIScreen.main.bounds.width
     
     init() {
         let navBarAppearance = UINavigationBar.appearance()
@@ -29,11 +30,15 @@ struct SwiftUIView2: View {
                 //                .navigationTitle("Explaration")
                 //                .navigationBarTitleDisplayMode(.inline)
                 
+                // Card 1
+                // Chapter 1, title 1
+                
                 HStack {
                     Text("Introduction")
                         .foregroundStyle(Color.accentColor)
                     Spacer()
                     Text("1 lesson")
+                        .foregroundStyle(Color.grey)
                 }.padding(.horizontal)
                 
                 Divider().padding(.horizontal,14)
@@ -60,20 +65,24 @@ struct SwiftUIView2: View {
                     RoundedRectangle(cornerRadius: 11.0)
                         .foregroundColor(.videoCard))
                 .padding(.horizontal,14)
- 
-// Card 2
+                
                 Spacer()
+                
+                // Card 2
+                // Chapter 2, title 2
+                
                 HStack {
                     Text("Why")
                         .foregroundStyle(Color.accentColor)
                     Spacer()
                     Text("3 lessons")
+                        .foregroundStyle(Color.grey)
                 }.padding(.horizontal)
                 
                 Divider().padding(.horizontal,14)
                 
                 // Chapter 2 Lesson 1
-
+                
                 
                 HStack {
                     VStack(alignment:.leading) {
@@ -101,7 +110,7 @@ struct SwiftUIView2: View {
                 .padding(.horizontal,14)
                 
                 // Chapter 2 Lesson 2
-
+                
                 
                 HStack {
                     VStack(alignment:.leading) {
@@ -157,6 +166,8 @@ struct SwiftUIView2: View {
             }
             // .frame(width: screenWidth * 0.9)
             .navigationTitle("Explanation")
+            .navigationBarTitleDisplayMode(.inline)
+           // fontWeight(.bold)
             
         }
     }
