@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  TopicView.swift
 //  My first APP
 //
 //  Created by Alekseenko Artem on 14/11/23.
@@ -9,7 +9,7 @@ import SwiftUI
 
 
 
-struct ContentView: View {
+struct TopicView: View {
     
     
     init() {
@@ -115,5 +115,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    TopicView()
 }
