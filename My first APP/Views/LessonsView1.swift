@@ -119,7 +119,7 @@ struct LessonsView1: View {
                         Text("Why - Cold Exposure")
                             .font(.title3)
                             .foregroundStyle(Color.white)
-                        Text("Wim Hof explains the use and importance of WHM breathing.")
+                        Text("Wim Hof explains why the cold is your warm friend.")
                             .font(.footnote)
                             .foregroundStyle(Color.white)
                     }
