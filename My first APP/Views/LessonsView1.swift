@@ -32,7 +32,6 @@ struct LessonsView1: View {
                 
                 // Card 1
                 // Chapter 1, title 1
-                
                 HStack {
                     Text("Introduction")
                         .foregroundStyle(Color.accentColor)
@@ -42,6 +41,8 @@ struct LessonsView1: View {
                 }.padding(.horizontal)
                 
                 Divider().padding(.horizontal,14)
+                NavigationLink(destination: VideoView1(), label: {
+                    // Chapter 1, lesson 1 with the link to VideoView1
                 HStack {
                     VStack(alignment:.leading) {
                         Text("Intoduction")
@@ -65,6 +66,7 @@ struct LessonsView1: View {
                     RoundedRectangle(cornerRadius: 11.0)
                         .foregroundColor(.videoCard))
                 .padding(.horizontal,14)
+            })
                 
                 Spacer()
                 
