@@ -6,8 +6,8 @@
 //
 
 import Foundation
-
-struct Topic {
+struct Topic: Identifiable {
+    let id = UUID()
     var mainTheme: String
     var description: String
     var imageName: String

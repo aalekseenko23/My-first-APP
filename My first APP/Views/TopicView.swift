@@ -22,98 +22,68 @@ struct TopicView: View {
         
         NavigationStack {
             ScrollView {
-            Divider()
-            NavigationLink(destination: LessonsView1(), label: {
-                VStack {
-                    VStack{
-                        Image("Serious man in cold water")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .clipShape(RoundedRectangle(cornerRadius: 11.0))
-                        
-                        
-                        HStack {
-                            VStack(alignment:.leading){
-                                Text("Exploration")
-                                    .fontWeight(.bold)
-                                    .foregroundStyle(Color.accentColor)
-                                Text("Exploration")
-                                    .font(.footnote)
-                                    .foregroundStyle(Color.accentColor)
+                Divider()
+                
+                ForEach(topicsAll) {topic in
+                    
+        NavigationLink(destination: LessonsView1(topic: topic), label: {
+                    VStack {
+                        VStack{
+                            Image(topic.imageName)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .clipShape(RoundedRectangle(cornerRadius: 11.0))
+                            
+                            
+                            HStack {
+                                VStack(alignment:.leading){
+                                    Text(topic.mainTheme)
+                                        .fontWeight(.bold)
+                                        .foregroundStyle(Color.accentColor)
+                                    Text(topic.description)
+                                        .font(.footnote)
+                                        .foregroundStyle(Color.accentColor)
+                                }
+                                
+                                Spacer()
+                                
+                                HStack (alignment:.bottom) {
+                                    Text("Start").fontWeight(.bold).foregroundStyle(Color.videoCard)
+                                }
+                                
+                                
                             }
-                            
-                            Spacer()
-                            
-                            HStack (alignment:.bottom) {
-                                Text("Start").fontWeight(.bold).foregroundStyle(Color.videoCard)
-                            }
-                            
-                            
                         }
+                        
                     }
                     .padding(20)
                     .background(
                         RoundedRectangle(cornerRadius: 11.0)
                             .foregroundColor(.white)
-                            .shadow(radius: 5)
-                    )
-                }.padding()
-            })
-            
-            NavigationLink(destination: LessonsView1(), label: {
-                VStack {
-                    VStack{
-                        Image("Smiling man in cold water")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .clipShape(RoundedRectangle(cornerRadius: 11.0))
-                        
-                        
-                        HStack {
-                            VStack(alignment:.leading){
-                                Text("MiniClass")
-                                    .fontWeight(.bold)
-                                    .foregroundStyle(Color.accentColor)
-                                Text("An introduction to the Wim Hof Method")
-                                    .font(.footnote)
-                                    .foregroundStyle(Color.accentColor)
-                            }
-                            
-                            Spacer()
-                            
-                            HStack (alignment:.bottom) {
-                                Text("Start")
-                                    .fontWeight(.bold)
-                                    .foregroundStyle(Color.videoCard)
-                            }
-                            
-                            
-                        }
-                    }.padding(20)
-                        .background(
-                            
-                            RoundedRectangle(cornerRadius: 11.0)
-                                .foregroundColor(.white)
-                                .shadow(radius: 5)
-                        )
-                }.padding()
-            })
-            
-            
-            
-            .navigationTitle("E-Learning")
-            .navigationBarTitleDisplayMode(.inline)
-            
-            Button("Open WHM Explanations PDF") {
-                //Opens PDF, I hope
-            }
-            .buttonStyle(.borderedProminent)
+                            .shadow(radius: 5))
+                    .padding()
+                }
+            )}
+                }
+                
+                
+                
+                
+                
+                
+                .navigationTitle("E-Learning")
+                .navigationBarTitleDisplayMode(.inline)
+                
+                Button("Open WHM Explanations PDF") {
+                    //Opens PDF, I hope
+                }
+                .buttonStyle(.borderedProminent)
             }
         }
-        
-        
     }
-}
+        
+    
+
 
 #Preview {
     TopicView()

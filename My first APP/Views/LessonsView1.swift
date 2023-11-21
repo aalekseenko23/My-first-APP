@@ -12,8 +12,10 @@ struct LessonsView1: View {
     
     // pretty intersting function
     //    let screenWidth = UIScreen.main.bounds.width
+    var topic: Topic
     
-    init() {
+    init(topic:Topic) {
+        self.topic = topic
         let navBarAppearance = UINavigationBar.appearance()
         navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.accent]
         navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.accent]
@@ -23,6 +25,7 @@ struct LessonsView1: View {
         
         NavigationStack{
             Divider()
+            Text(topic.mainTheme)
             ScrollView {
                 
                 //            Divider()
@@ -175,6 +178,6 @@ struct LessonsView1: View {
     }
 }
 
-#Preview {
-    LessonsView1()
-}
+//#Preview {
+//    LessonsView1()
+//}
