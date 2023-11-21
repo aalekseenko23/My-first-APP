@@ -23,7 +23,7 @@ struct TopicView: View {
         NavigationStack {
             ScrollView {
             Divider()
-            NavigationLink(destination: SwiftUIView2(), label: {
+            NavigationLink(destination: LessonsView1(), label: {
                 VStack {
                     VStack{
                         Image("Serious man in cold water")
@@ -60,7 +60,7 @@ struct TopicView: View {
                 }.padding()
             })
             
-            NavigationLink(destination: SwiftUIView3(), label: {
+            NavigationLink(destination: LessonsView1(), label: {
                 VStack {
                     VStack{
                         Image("Smiling man in cold water")

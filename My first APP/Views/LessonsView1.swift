@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct SwiftUIView2: View {
+struct LessonsView1: View {
     
     // pretty intersting function
     //    let screenWidth = UIScreen.main.bounds.width
@@ -174,5 +174,5 @@ struct SwiftUIView2: View {
 }
 
 #Preview {
-    SwiftUIView2()
+    LessonsView1()
 }

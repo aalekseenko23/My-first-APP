@@ -7,26 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D22CC372B0BB26B002DE4FC /* VideoView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D22CC362B0BB26B002DE4FC /* VideoView1.swift */; };
 		4D8F11632B039018001E86B6 /* My_first_APPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8F11622B039018001E86B6 /* My_first_APPApp.swift */; };
 		4D8F11652B039018001E86B6 /* TopicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8F11642B039018001E86B6 /* TopicView.swift */; };
 		4D8F11672B03901A001E86B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D8F11662B03901A001E86B6 /* Assets.xcassets */; };
 		4D8F116A2B03901A001E86B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D8F11692B03901A001E86B6 /* Preview Assets.xcassets */; };
-		4D960D082B0625200082A6F2 /* SwiftUIView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D960D072B0625200082A6F2 /* SwiftUIView2.swift */; };
-		4D960D0A2B0632B70082A6F2 /* SwiftUIView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D960D092B0632B70082A6F2 /* SwiftUIView3.swift */; };
+		4D960D082B0625200082A6F2 /* LessonsView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D960D072B0625200082A6F2 /* LessonsView1.swift */; };
+		4D960D0A2B0632B70082A6F2 /* VideoView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D960D092B0632B70082A6F2 /* VideoView1.swift */; };
 		4D960D0C2B065D350082A6F2 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D960D0B2B065D350082A6F2 /* DataModel.swift */; };
 		4D960D102B0675730082A6F2 /* TopicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D960D0F2B0675730082A6F2 /* TopicViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4D22CC362B0BB26B002DE4FC /* VideoView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView1.swift; sourceTree = "<group>"; };
 		4D8F115F2B039018001E86B6 /* My first APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My first APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D8F11622B039018001E86B6 /* My_first_APPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_first_APPApp.swift; sourceTree = "<group>"; };
 		4D8F11642B039018001E86B6 /* TopicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicView.swift; sourceTree = "<group>"; };
 		4D8F11662B03901A001E86B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D8F11692B03901A001E86B6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		4D960D072B0625200082A6F2 /* SwiftUIView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView2.swift; sourceTree = "<group>"; };
-		4D960D092B0632B70082A6F2 /* SwiftUIView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView3.swift; sourceTree = "<group>"; };
+		4D960D072B0625200082A6F2 /* LessonsView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsView1.swift; sourceTree = "<group>"; };
+		4D960D092B0632B70082A6F2 /* VideoView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView1.swift; sourceTree = "<group>"; };
 		4D960D0B2B065D350082A6F2 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		4D960D0F2B0675730082A6F2 /* TopicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,9 +65,8 @@
 			children = (
 				4D8F11622B039018001E86B6 /* My_first_APPApp.swift */,
 				4D8F11642B039018001E86B6 /* TopicView.swift */,
-				4D960D072B0625200082A6F2 /* SwiftUIView2.swift */,
-				4D960D092B0632B70082A6F2 /* SwiftUIView3.swift */,
-				4D22CC362B0BB26B002DE4FC /* VideoView1.swift */,
+				4D960D072B0625200082A6F2 /* LessonsView1.swift */,
+				4D960D092B0632B70082A6F2 /* VideoView1.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -172,9 +169,8 @@
 				4D8F11652B039018001E86B6 /* TopicView.swift in Sources */,
 				4D960D102B0675730082A6F2 /* TopicViewModel.swift in Sources */,
 				4D8F11632B039018001E86B6 /* My_first_APPApp.swift in Sources */,
-				4D960D0A2B0632B70082A6F2 /* SwiftUIView3.swift in Sources */,
-				4D22CC372B0BB26B002DE4FC /* VideoView1.swift in Sources */,
-				4D960D082B0625200082A6F2 /* SwiftUIView2.swift in Sources */,
+				4D960D0A2B0632B70082A6F2 /* VideoView1.swift in Sources */,
+				4D960D082B0625200082A6F2 /* LessonsView1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
