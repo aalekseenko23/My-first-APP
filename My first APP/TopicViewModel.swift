@@ -7,10 +7,10 @@
 
 import Foundation
 
-//class LearnerViewModel {
-//    
-//    var topics = [Topic(mainTheme: "MiniClass", description: "An introduction to the Wim Hof Method", imageName: "Smiling man in cold water", lessons: <#[Lesson]#>)]
-//    
-//    
-//}
+var topicsAll: [Topic] = [Topic(mainTheme: "Exploration", description: "Exploration", imageName: "Serious man in cold water", chapter: firstTopicChapter)]
+
+var firstTopicChapter = [Chapter(name: "Introduction", amountOfLessons: "1 lesson", lessons: introductionLessons)]
+
+var introductionLessons = [Lesson(name: "Introduction", description: "Wim Hof introduces your his method", completed: false, videoLink: " ")]
+
 

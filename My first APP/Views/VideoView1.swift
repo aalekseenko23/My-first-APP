@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import UIKit
+import WebKit
 
 struct VideoView1: View {
     init() {
@@ -19,14 +21,14 @@ struct VideoView1: View {
             Divider()
 
         
-        VStack {
+        VStack(alignment: .leading) {
             //There should be Youtube video player
             Image("Happy man in cold water")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .clipShape(RoundedRectangle(cornerRadius: 11.0))
             //Lesson 1 Name and Description
-            VStack {
+            VStack  (alignment: .leading){
                 Text("Introduction")
                     .foregroundStyle(Color.accentColor)
                     .fontWeight(.bold)
