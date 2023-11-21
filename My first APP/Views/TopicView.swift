@@ -21,6 +21,7 @@ struct TopicView: View {
     var body: some View {
         
         NavigationStack {
+            ScrollView {
             Divider()
             NavigationLink(destination: SwiftUIView2(), label: {
                 VStack {
@@ -107,7 +108,7 @@ struct TopicView: View {
                 //Opens PDF, I hope
             }
             .buttonStyle(.borderedProminent)
-            
+            }
         }
         
         
